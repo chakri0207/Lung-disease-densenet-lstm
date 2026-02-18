@@ -52,14 +52,36 @@ Softmax (6 classes)
 
 ## 📂 Project Structure
 
-lung_sound_project/ │ ├── app/ │ └── gradio_app.py \# Web UI │ ├── src/
-│ ├── features.py \# Audio + Mel feature extraction │ ├── model.py \#
-DenseNet + BiLSTM model │ ├── inference.py \# Model loading + prediction
-│ ├── data/ │ ├── raw/ \# ICBHI + Fraiwan datasets │ └── processed/ │
-└── manifests/ │ ├── models/ │ ├── best_model.pth │ └── config.json │
-├── notebooks/ │ ├── 01_build_manifest.ipynb │ ├── 02_train_model.ipynb
-│ ├── 04_train_focal_loss.ipynb │ └── 03_evaluate.ipynb │ ├──
-requirements.txt └── README.md
+lung_sound_project/
+│
+├── app/
+│   └── gradio_app.py          # Web UI
+│
+├── src/
+│   ├── features.py            # Audio + Mel feature extraction
+│   ├── model.py               # DenseNet + BiLSTM model
+│   ├── inference.py           # Model loading + prediction
+│   ├── dataset.py             # Training dataset class
+│   ├── config.py              # Config definitions
+│   └── label_map.py
+│
+├── data/
+│   ├── raw/                   # ICBHI + Fraiwan datasets
+│   └── processed/
+│       └── manifests/
+│
+├── models/
+│   ├── best_model.pth
+│   └── config.json
+│
+├── notebooks/
+│   ├── 01_build_manifest.ipynb
+│   ├── 02_train_model.ipynb
+│   ├── 04_train_focal_loss.ipynb
+│   └── 03_evaluate.ipynb
+│
+├── requirements.txt
+└── README.md
 
 ------------------------------------------------------------------------
 
