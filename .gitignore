@@ -1,0 +1,77 @@
+# =========================
+# Secrets & Credentials
+# =========================
+
+
+.env
+.env.*
+*.key
+*.pem
+
+# =========================
+# Python Cache
+# =========================
+__pycache__/
+*.py[cod]
+*.so
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+env/
+.venv/
+.virtualenv/
+conda-env/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# ❌ DATASETS (DO NOT PUSH)
+# =========================
+data/
+dataset/
+datasets/
+raw_data/
+processed_data/
+*.csv
+*.tsv
+*.json
+*.parquet
+*.hdf5
+*.wav
+*.mp3
+*.flac
+*.zip
+
+
+
+# =========================
+# Logs & Outputs
+# =========================
+logs/
+outputs/
+results/
+reports/
+
+# =========================
+# Gradio / Cache
+# =========================
+.gradio/
+.cache/
+
+# =========================
+# VS Code / OS
+# =========================
+.vscode/
+.history/
+.DS_Store
+Thumbs.db
+
+
+#studio
+.lightning_studio/
+.kaggle/
